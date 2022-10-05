@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <!-- GOOGLE-FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- STYLE-CSS -->
+    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- SCRIPT-APP -->
+    <script src="assets/script/app.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+      <!-- CALCULATOR -->
+      <div class="calculator" id="containerCalculator">
+          <h1>Calculadora de IMC</h1>
+          <form class="form">
+
+              <fieldset>
+                  <label for="height">Altura :</label>
+                  <input type="text" id="height" placeholder="Exemplo: 1.75">
+              </fieldset>
+
+              <fieldset>
+                  <label for="weight">Peso :</label>
+                  <input type="text" id="weight" placeholder="Exemplo: 70.5">
+              </fieldset>
+
+              <div class="buttons">
+                  <button id="calculate">calcular</button>
+                  <button id="clean">limpar</button>
+              </div>
+          </form>
+      </div>
+      <!-- /CALCULATOR -->
+        
+      <!-- RESULT-IMC -->
+      <div class="result-imc hidden" id="containerResult">
+          <h2>Seu IMC: <span id="resultImc"></span></h2>
+          <h3>Situação atual: <span id="situation"></span></h3>
+
+          <h4>Confira as classificações:</h4>
+          
+          <table>
+              <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+                <th>Obesidade (GRAU)</th>
+              </tr>
+              <tr>
+                <td>MENOR QUE 18,5</td>
+                <td>MAGREZA</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>ENTRE 18,5 E 24,9</td>
+                <td>NORMAL</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>ENTRE 25,0 E 29,9</td>
+                <td>SOBREPESO</td>
+                <td>I</td>
+              </tr>
+              <tr>
+                <td>ENTRE 30,0 E 39,9</td>
+                <td>OBESIDADE</td>
+                <td>II</td>
+              </tr>
+              <tr>
+                <td>MAIOR QUE 40,0</td>
+                <td>OBESIDADE GRAVE</td>
+                <td>III</td>
+              </tr>
+          </table>  
+
+          <div class="buttons">
+              <button id="back">Voltar</button>
+          </div>
+      </div>
+      <!-- /RESULT-IMC -->
+    </div>
+   
+</body>
+</html>
