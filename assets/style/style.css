@@ -1,0 +1,156 @@
+/* CSS-RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* VARIABLES-CSS */
+:root{
+    --font-primary: 'Poppins', sans-serif;   
+    --primary-color: #090d21;
+    --secondary-color: #1f1e34;
+    --white-color: #FFFFFF;
+    --red-color: #BF342E;
+    --silver-color: #3e3a44;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-family: var(--font-primary);
+    padding: 0 2rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 100vh;
+}
+
+/* FORMATTING-CALCULATOR */
+.calculator,
+.result-imc{
+    background-color: var(--secondary-color);
+    width: 50rem;
+    height: auto;
+    padding: 3rem;
+}
+
+.calculator h1{
+    font-size: 2.5rem;
+    text-align: center;
+    /* margin: 4rem 0; */
+}
+
+/* FORMATTING-FORM */
+.calculator .form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 2rem 0;
+}
+
+.calculator .form fieldset label{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.calculator .form fieldset input{
+    border: none;
+    font-weight: bold;
+    height: 5.6rem;
+    padding: 0 1rem;
+}
+
+/* FORMATTING-FORM-BUTTONS */
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons button{
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    width: 100%;
+    height: 5.6rem;
+    transition: ease-in-out 0.3s;
+}
+
+.buttons button{
+    background-color: var(--red-color);
+}
+
+.buttons button:hover{
+    background-color: var(--silver-color);
+}
+
+.buttons button:last-child{
+    background-color: var(--silver-color);
+}
+
+.buttons button:last-child:hover{
+    background-color: var(--red-color);
+}
+
+/* FORMATTING-RESULT-IMC */
+.result-imc h2{
+    margin: 4rem 0 0 0;
+    font-size: 2.5rem;
+}
+
+.result-imc h3{
+    font-size: 2rem;
+}
+
+.result-imc h2 span,
+.result-imc h3 span{
+    color: #b9a73a;
+    font-weight: bold;
+}
+
+.result-imc h4{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.result-imc h2,
+.result-imc h3,
+.result-imc h4{
+    text-align: center;
+}
+
+/* FORMATTING-RESULT-IMC-TABLE */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #b9a73a;
+}
+
+/* BLOCK AND HIDDEN */
+.block{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
